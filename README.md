@@ -80,6 +80,9 @@ Whether you're neurodivergent, a high-performance professional, or navigating em
 
 ## 📁 Repository Structure
 
+The NeuroSyncSmartwatch repo is organized as follows:
+
+```text
 NeuroSyncSmartwatch/
 ├── .github/
 │   ├── workflows/
@@ -237,4 +240,5 @@ NeuroSyncSmartwatch/
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
-└── README.md
+├── README.md                         # (this file)
+└── LICENSE
