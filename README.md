@@ -79,3 +79,162 @@ Whether you're neurodivergent, a high-performance professional, or navigating em
 
 
 ## 📁 Repository Structure
+
+NeuroSyncSmartwatch/
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml                     # Build & test for firmware, apps & services
+│   │   ├── cd.yml                     # Deploy mobile apps & backend
+│   │   ├── security-scan.yml          # SAST/DAST, dependency checks
+│   │   └── dependabot.yml             # Automated dependency updates
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── docs/
+│   ├── architecture/
+│   │   ├── overview.md
+│   │   ├── system-flow-diagrams/
+│   │   │   ├── hardware_flow.drawio
+│   │   │   └── software_flow.drawio
+│   │   └── state-machines.md
+│   ├── compliance/
+│   │   ├── HIPAA.md
+│   │   ├── GDPR.md
+│   │   ├── ISO13485.md
+│   │   └── cybersecurity-framework.md
+│   ├── product-vision.md
+│   ├── features.md
+│   ├── user-stories.md
+│   ├── developer-guide.md
+│   ├── user-guide.md
+│   └── security-privacy.md
+│
+├── src/                              # Monorepo root for shared modules
+│   ├── common/
+│   │   ├── libs/
+│   │   └── utils/
+│   └── specs/
+│
+├── hardware/
+│   ├── schematics/
+│   │   ├── v1.0/
+│   │   └── v2.0/
+│   ├── pcb-layout/
+│   ├── bom/
+│   │   └── part-list.csv
+│   ├── mechanical/
+│   │   ├── enclosure/
+│   │   └── assembly-drawings/
+│   └── simulation/
+│       ├── spice/
+│       └── fpga/
+│
+├── firmware/
+│   ├── bootloader/
+│   ├── kernel/
+│   ├── drivers/
+│   │   ├── sensors/
+│   │   │   ├── heart_rate/
+│   │   │   ├── eeg/
+│   │   │   └── accel_gyro/
+│   │   ├── comms/
+│   │   │   ├── bluetooth/
+│   │   │   └── wifi/
+│   │   └── power_mgmt/
+│   ├── middleware/
+│   │   ├── neuroadaptive-engine/
+│   │   ├── biometric-ai-core/
+│   │   └── data-logger/
+│   ├── app/
+│   │   ├── main/
+│   │   └── diagnostics/
+│   └── tests/
+│       ├── unit/
+│       └── integration/
+│
+├── mobile-app/
+│   ├── android/
+│   │   ├── app/
+│   │   ├── build.gradle
+│   │   └── src/
+│   ├── ios/
+│   │   ├── NeuroSync.xcodeproj
+│   │   └── Sources/
+│   └── shared/
+│       ├── components/
+│       ├── services/
+│       └── utils/
+│
+├── web-dashboard/
+│   ├── frontend/
+│   │   ├── public/
+│   │   └── src/
+│   └── backend/
+│       ├── api/
+│       └── db/
+│
+├── ml-models/
+│   ├── training/
+│   │   ├── data/
+│   │   └── notebooks/
+│   ├── neuroadaptive-model/
+│   └── inference/
+│
+├── backend-services/
+│   ├── auth-service/
+│   ├── data-ingestion/
+│   ├── analytics-engine/
+│   └── ninefold-integration/         # Hooks into Ninefold AI Mesh
+│
+├── security/
+│   ├── secure-boot/
+│   ├── encryption-modules/           # Q3Hash & post-quantum crypto
+│   ├── pentest-reports/
+│   └── vault-config/                 # Secrets & key management
+│
+├── infrastructure/
+│   ├── terraform/
+│   │   ├── aws/
+│   │   └── azure/
+│   ├── ansible/
+│   └── kubernetes/
+│       ├── helm-charts/
+│       └── manifests/
+│
+├── ci-cd/
+│   ├── scripts/
+│   │   ├── build-firmware.sh
+│   │   ├── flash-firmware.sh
+│   │   ├── deploy-mobile.sh
+│   │   └── sync-data.sh
+│   └── docker/
+│       ├── dashboard.Dockerfile
+│       └── services.Dockerfile
+│
+├── tests/
+│   ├── hardware-in-the-loop/
+│   ├── firmware/
+│   ├── mobile-app/
+│   ├── web-dashboard/
+│   ├── ml-models/
+│   └── e2e/
+│
+├── scripts/
+│   ├── setup-env.sh                  # Bootstraps dev environment
+│   ├── codegen.sh                    # Generates API clients & docs
+│   └── bench.sh                      # Performance benchmarks
+│
+├── third-party-licenses/             # Licenses for bundled dependencies
+│
+├── .editorconfig
+├── .pre-commit-config.yaml
+├── .eslintignore
+├── .eslintrc.js
+├── .clang-format
+├── .env.example
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+└── README.md
